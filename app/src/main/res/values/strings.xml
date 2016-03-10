@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Internet Packs</string>
+
+    <string name="btn_about">О программе</string>
+    <string name="btn_checkBalance">Проверить баланс</string>
+    <string name="btn_checkPackRest">Проверить остаток трафика</string>
+    <string name="btn_goToSite">Перейти на страницу с интернет-пакетами оператора</string>
+    <string name="btn_byPack">Купить</string>
+
+    <string name="tv_oneDollar">$1 = </string>
+    <string name="tv_coast">Стоимость($)</string>
+    <string name="tv_localCoast">Стоимость(СУМ)</string>
+    <string name="tv_cbuResourceUsage">Программа использует ресурс сайта <b>www.cbu.uz</b> для получения текущего курса доллара по данным ЦБ РУз</string>
+
+    <string name="toast_connectionError">Ошибка соединения. Проверьте подключение</string>
+
+    <string name="beeline_name">Beeline</string>
+    <string-array name="beeline_packs">
+        <item>50 MByte</item>
+        <item>80 MByte</item>
+        <item>125 MByte</item>
+        <item>325 MByte</item>
+        <item>525 MByte</item>
+        <item>1100 MByte</item>
+        <item>1700 MByte</item>
+        <item>2700 MByte</item>
+        <item>3700 MByte</item>
+    </string-array>
+
+    <string name="ucell_name">Ucell</string>
+    <string-array name="ucell_packs">
+        <item>50 MByte</item>
+        <item>150 MByte</item>
+        <item>300 MByte</item>
+        <item>500 MByte</item>
+        <item>1000 MByte</item>
+        <item>1500 MByte</item>
+        <item>2500 MByte</item>
+        <item>4000 MByte</item>
+    </string-array>
+
+    <string name="tv_email">djuraev.elbek@gmail.com</string>
+</resources>

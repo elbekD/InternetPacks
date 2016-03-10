@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/activity_info_layout"
+    tools:context="com.example.internetpacks.InfoActivity">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerPacks"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/checkPackRest"
+        android:layout_alignEnd="@+id/checkPackRest"
+        android:layout_alignLeft="@+id/packCoastTV"
+        android:layout_alignStart="@+id/packCoastTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/tv_coast"
+        android:id="@+id/packCoastTV"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spinnerPacks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/tv_localCoast"
+        android:id="@+id/localPackCoastTV"
+        android:layout_below="@+id/packCoastTV"
+        android:layout_alignLeft="@+id/packCoastTV"
+        android:layout_alignStart="@+id/packCoastTV"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/packCoast"
+        android:layout_toRightOf="@+id/localPackCoastTV"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/packCoastTV"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_alignRight="@+id/localPackCoast"
+        android:layout_alignEnd="@+id/localPackCoast" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/localPackCoast"
+        android:layout_toRightOf="@+id/localPackCoastTV"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/localPackCoastTV"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_alignRight="@+id/spinnerPacks"
+        android:layout_alignEnd="@+id/spinnerPacks" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/tv_oneDollar"
+        android:id="@+id/oneDollar"
+        android:layout_below="@+id/localPackCoastTV"
+        android:layout_alignLeft="@+id/localPackCoastTV"
+        android:layout_alignStart="@+id/localPackCoastTV"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usdRate"
+        android:layout_alignTop="@+id/oneDollar"
+        android:layout_toRightOf="@+id/oneDollar"
+        android:layout_toEndOf="@+id/oneDollar"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_byPack"
+        android:id="@+id/buyPack"
+        android:layout_below="@+id/oneDollar"
+        android:layout_alignLeft="@+id/oneDollar"
+        android:layout_alignStart="@+id/oneDollar"
+        android:width="155dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_checkBalance"
+        android:id="@+id/checkBalance"
+        android:layout_below="@+id/buyPack"
+        android:layout_alignLeft="@+id/buyPack"
+        android:layout_alignStart="@+id/buyPack"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_checkPackRest"
+        android:id="@+id/checkPackRest"
+        android:layout_below="@+id/checkBalance"
+        android:layout_alignLeft="@+id/checkBalance"
+        android:layout_alignStart="@+id/checkBalance"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_goToSite"
+        android:id="@+id/goToSite"
+        android:layout_below="@+id/checkPackRest"
+        android:layout_alignLeft="@+id/checkPackRest"
+        android:layout_alignStart="@+id/checkPackRest"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_alignRight="@+id/checkPackRest"
+        android:layout_alignEnd="@+id/checkPackRest" />
+</RelativeLayout>

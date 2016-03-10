@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.internetpacks.MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beeline_name"
+        android:id="@+id/beeline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="@color/beeline"
+        android:textSize="18sp"
+        android:width="155dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ucell_name"
+        android:id="@+id/ucell"
+        android:layout_below="@+id/beeline"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/ucell"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/beeline"
+        android:layout_alignStart="@+id/beeline"
+        android:layout_alignRight="@+id/beeline"
+        android:layout_alignEnd="@+id/beeline" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_about"
+        android:id="@+id/about"
+        android:layout_below="@+id/ucell"
+        android:layout_alignLeft="@+id/ucell"
+        android:layout_alignStart="@+id/ucell"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/aboutButton"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/ucell"
+        android:layout_alignEnd="@+id/ucell" />
+</RelativeLayout>
